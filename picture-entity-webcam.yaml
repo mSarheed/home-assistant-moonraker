@@ -1,0 +1,5 @@
+type: picture-entity
+entity: camera.3d_printer_camera
+camera_view: live
+show_state: false
+show_name: false
