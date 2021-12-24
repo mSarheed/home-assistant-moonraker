@@ -1,0 +1,9 @@
+type: picture-entity
+entity: camera.3d_printer_thumbnail
+show_name: false
+show_state: false
+tap_action:
+  action: none
+hold_action:
+  action: none
+theme: synthwave
