@@ -1,0 +1,88 @@
+type: horizontal-stack
+cards:
+  - type: button
+    tap_action:
+      action: call-service
+      service: rest_command.3d_printer_emergency_stop
+      service_data: {}
+      target: {}
+    name: STOP
+    icon: mdi:alert-octagon-outline
+    show_state: false
+    show_name: true
+    show_icon: true
+    hold_action:
+      action: none
+    card_mod:
+      style: |
+        :host {
+          --paper-item-icon-color: red;
+        }
+  - type: button
+    tap_action:
+      action: call-service
+      service: rest_command.3d_printer_firmware_restart
+      service_data: {}
+      target: {}
+    name: FW Reset
+    icon: mdi:restart-alert
+    show_icon: true
+    show_name: true
+    hold_action:
+      action: none
+    card_mod:
+      style: |
+        :host {
+          --paper-item-icon-color: green;
+        }
+  - type: button
+    tap_action:
+      action: call-service
+      service: rest_command.3d_printer_pause
+      service_data: {}
+      target: {}
+    icon: mdi:motion-pause-outline
+    name: Pause
+    show_icon: true
+    show_name: true
+    hold_action:
+      action: none
+    card_mod:
+      style: |
+        :host {
+          --paper-item-icon-color: yellow;
+        }
+  - type: button
+    tap_action:
+      action: call-service
+      service: rest_command.3d_printer_resume
+      service_data: {}
+      target: {}
+    icon: mdi:motion-play-outline
+    name: Resume
+    show_icon: true
+    show_name: true
+    hold_action:
+      action: none
+    card_mod:
+      style: |
+        :host {
+          --paper-item-icon-color: green;
+        }
+  - type: button
+    tap_action:
+      action: call-service
+      service: rest_command.3d_printer_cancel
+      service_data: {}
+      target: {}
+    icon: mdi:cancel
+    name: Cancel
+    show_name: true
+    show_icon: true
+    hold_action:
+      action: none
+    card_mod:
+      style: |
+        :host {
+          --paper-item-icon-color: red;
+        }
