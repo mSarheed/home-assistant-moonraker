@@ -1,0 +1,9 @@
+type: gauge
+entity: sensor.3d_printer_current_progress
+min: 0
+theme: synthwave
+max: 100
+severity:
+  green: 90
+  yellow: 50
+  red: 0
