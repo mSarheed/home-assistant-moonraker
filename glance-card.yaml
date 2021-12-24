@@ -1,0 +1,25 @@
+type: glance
+entities:
+  - entity: sensor.3d_printer_state
+    name: State
+  - entity: sensor.3d_printer_current_progress
+  - entity: sensor.3d_printer_time_remaining
+    name: Remaining
+  - entity: sensor.3d_printer_print_time
+    name: Elapsed
+  - entity: sensor.3d_printer_current_layer
+    icon: mdi:layers-edit
+  - entity: sensor.3d_printer_total_layers
+    icon: mdi:layers-triple
+  - entity: sensor.3d_printer_eta
+  - entity: switch.sonoff_3d_printer_outlet
+    name: Power
+    icon: mdi:power
+    tap_action:
+      action: toggle
+theme: synthwave
+columns: 4
+show_name: true
+show_icon: true
+state_color: true
+show_state: true
