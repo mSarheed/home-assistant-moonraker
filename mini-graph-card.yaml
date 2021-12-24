@@ -1,0 +1,17 @@
+type: custom:mini-graph-card
+name: Temperature
+align_state: center
+icon: mdi:thermometer-lines
+hour24: true
+hours_to_show: 2
+points_per_hour: 60
+show:
+  labels: true
+  fill: false
+entities:
+  - entity: sensor.3d_printer_hotend_actual
+    name: Hotend
+    color: green
+  - entity: sensor.3d_printer_bed_actual
+    name: Bed
+    color: red
